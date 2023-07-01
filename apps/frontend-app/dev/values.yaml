@@ -1,0 +1,4 @@
+config:
+  namespace: frontend
+
+imageTag: dev-15

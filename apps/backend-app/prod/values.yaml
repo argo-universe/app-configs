@@ -1,0 +1,4 @@
+config:
+  namespace: backend
+
+imageTag: dev-6

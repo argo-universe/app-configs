@@ -1,0 +1,6 @@
+#!/bin/bash
+
+docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
+
+docker build -t $DOCKER_USERNAME/$IMAGE_NAME:$IMAGE_TAG . 
+docker push $DOCKER_USERNAME/$IMAGE_NAME:$IMAGE_TAG

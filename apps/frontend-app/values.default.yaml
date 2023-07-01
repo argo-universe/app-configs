@@ -1,0 +1,8 @@
+config:
+  namespace: frontend
+
+appName: frontend-app
+imageName: frontend-app
+repository: argouniverse
+imageTag: 1.0
+ 
