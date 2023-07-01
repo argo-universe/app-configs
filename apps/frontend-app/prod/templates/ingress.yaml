@@ -9,7 +9,7 @@ metadata:
   name: "{{.Values.appName}}-ingress"
 spec:
   rules:
-  - host: backend.argouniverse.com
+  - host: frontend.argouniverse.com
     http:
       paths:
       - backend:
@@ -21,6 +21,6 @@ spec:
         pathType: Prefix
   tls:
   - hosts:
-    - backend.argouniverse.com
-    secretName: issuer-letsencrypt-backend
+    - frontend.argouniverse.com
+    secretName: issuer-letsencrypt-frontend
 {{- end }}
