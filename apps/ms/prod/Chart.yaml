@@ -1,0 +1,11 @@
+apiVersion: v2
+name: Microservice
+description: demo microservice using argouniverse helm chart
+type: application
+version: v1
+appVersion: v1
+dependencies:
+  - name: microservice
+    version: "0.1.1"
+    repository: oci://ghcr.io/argo-universe
+ 
