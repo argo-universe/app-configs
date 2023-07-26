@@ -1,20 +1,23 @@
 config:
   namespace: backend
-  
-imageTag: dev-6
 
-ingress:
-  enabled: true
-  className: ""
-  annotations:
-    kubernetes.io/ingress.class: nginx
-    cert-manager.io/cluster-issuer: letsencrypt-cluster-issuer
-  hosts:
-    - host: backend.argouniverse.com
-      paths:
-        - path: /
-          pathType: ImplementationSpecific
-  tls: 
-   - secretName: issuer-letsencrypt
-     hosts:
-       - backend.argouniverse.com
+
+microservice:
+  image:
+    imageTag: dev-6
+    
+  ingress:
+    enabled: true
+    className: ""
+    annotations:
+      kubernetes.io/ingress.class: nginx
+      cert-manager.io/cluster-issuer: letsencrypt-cluster-issuer
+    hosts:
+      - host: backend.argouniverse.com
+        paths:
+          - path: /
+            pathType: ImplementationSpecific
+    tls: 
+    - secretName: issuer-letsencrypt
+      hosts:
+        - backend.argouniverse.com

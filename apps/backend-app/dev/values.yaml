@@ -1,5 +1,9 @@
 config:
   namespace: backend
-  
-imageTag: dev-6
 
+microservice:
+  image:
+    repository: "argouniverse/backend-app" 
+    imageTag: dev-6
+  ingress:
+    enabled: false

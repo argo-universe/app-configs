@@ -1,7 +1,11 @@
 config:
   namespace: backend
 
-appName: backend-app
-imageName: backend-app
-repository: argouniverse
-imageTag: 1.0 
+microservice:
+  image:
+    repository: "argouniverse/backend-app" 
+    imageTag: dev-6
+  serviceAccount:
+    create: false
+  service:
+    port: 3000
