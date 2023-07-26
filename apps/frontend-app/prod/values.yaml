@@ -1,7 +1,3 @@
-config:
-  namespace: frontend
-
-
 microservice:
   image:
     imageTag: dev-15
