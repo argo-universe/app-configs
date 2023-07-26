@@ -1,8 +1,11 @@
 config:
   namespace: frontend
 
-appName: frontend-app
-imageName: frontend-app
-repository: argouniverse
-imageTag: 1.0
- 
+microservice:
+  image:
+    repository: "argouniverse/frontend-app" 
+    imageTag: dev-6
+  serviceAccount:
+    create: false
+  service:
+    port: 3000
