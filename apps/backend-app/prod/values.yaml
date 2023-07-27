@@ -4,7 +4,7 @@ config:
 
 microservice:
   image:
-    imageTag: dev-6
+    imageTag: prod-12
     
   ingress:
     enabled: true
