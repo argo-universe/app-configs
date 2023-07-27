@@ -4,6 +4,6 @@ config:
 microservice:
   image:
     repository: "argouniverse/backend-app" 
-    imageTag: dev-9
+    imageTag: dev-10
   ingress:
     enabled: false
