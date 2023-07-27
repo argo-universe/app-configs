@@ -14,7 +14,7 @@ git config --global user.email "no-reply@argo-universe.com"
 git config --global user.name "Mr. GitOps"
 
 # Update the image tag in the values file
-sed -i -e "s/imageTag: .*/imageTag: $IMAGE_TAG/g" "apps/$APP_NAME/values.$ENV.yaml"
+sed -i -e "s/imageTag: .*/imageTag: $IMAGE_TAG/g" "apps/$APP_NAME/$ENV/values.yaml"
 
 # Display the updated values file
 cat "apps/$APP_NAME/values.$ENV.yaml"
