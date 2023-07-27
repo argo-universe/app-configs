@@ -17,7 +17,7 @@ git config --global user.name "Mr. GitOps"
 sed -i -e "s/imageTag: .*/imageTag: $IMAGE_TAG/g" "apps/$APP_NAME/$ENV/values.yaml"
 
 # Display the updated values file
-cat "apps/$APP_NAME/values.$ENV.yaml"
+cat "apps/$APP_NAME/$ENV/values.yaml"
 
 # Add the changes to git
 git add .
