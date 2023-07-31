@@ -3,7 +3,7 @@ config:
 
 microservice:
   image:
-    repository: "argouniverse/fronted-app" 
+    repository: "argouniverse/frontend-app"
     imageTag: dev-19
   ingress:
     enabled: false
